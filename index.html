@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 베이징 여행 가이드</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: #CFFF24 !important;
+      
+    }
+    .bg-primary {
+      background-color: #FF4848 !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: #6799FF !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: #FFA873 !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: #17a2b8 !important;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">베이징 여행 가이드 - 10209 김형우</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>약 700여 년 동안 원, 명, 청 3개 왕조가 수도로 삼았던 베이징은 오래된 역사만큼이나 한없이 많은 이야기를 간직하고 있다. 중국에는 지난 100년을 보려면 상하이에 가고 지난 1000년을 보려면 베이징에 가라는 말이 있다. 그만큼 베이징 곳곳에서 생생한 역사의 흔적들을 찾아 볼 수 있다. 도시 전체가 살아 있는 박물관이라고 해도 과언이 아니다. 이제는 중국 정부의 지휘 아래 전통과 현대가 절묘하게 어우러진 최첨단 도시로 다시 한 번 변모하고 있다.</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/베이징덕.webp" class="d-block w-100" alt="일본 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/자금성 야경.jpg" class="d-block w-100" alt="일본 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/중국지도.png" class="d-block w-100" alt="일본 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/닭지도.jpg" class="d-block w-100" alt="일본 개요 4">
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">역사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/자금성1.jpg" alt="최초의 베이징" class="img-fluid">
+            <p>베이징이 역사에 공식적으로 등장한 것은 대략 3천 년 전이다. 베이징은 기원전 약 1000년 경 춘추전국시대 연나라(기원전 11세기-기원전 222년)의 수도, '계'(薊)였다. 연나라의 수도라는 뜻의 '연경'(燕京)은 요즘도 자주 쓰는 베이징의 오랜 비공식 별칭이다. 이때 연경은 전국 칠웅 가운데 한 나라였던 연의 수도였을 뿐 전체 중국의 수도는 아니었다. </p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/만리장성.jpg" alt="역사속 베이징" class="img-fluid">
+            <p>그 후 베이징이 전체 중국의 수도로서 등장한 것은 13세기 원나라를 세운 쿠빌라이 칸에 의해서이다.원나라가 망한 뒤에는 명나라 영락제가 난징(南京)에서 베이징으로 천도하고 현재의 도시 구획으로 정비했다.명나라와 청나라에 이어 베이징은 현재까지 700년 남짓한 시간 동안 수도가 되어왔다. </p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/오성홍기.svg" alt="오늘날까지의 베이징" class="img-fluid">
+            <p>명나라 제3대 황제 영락제는 이곳이 수도인 난징(南京)보다 북쪽에 위치하였기 때문에 베이징(北京)으로 개명한 뒤 남경에서 북경으로 천도(1403년)를 단행하였다. 자금성과 천단(天壇) 등의 건축물이 1406년에서 1420년대 사이에 건설되는 등, 명나라 시기 동안 베이징의 구획이 확립되었다. 1644년, 만주족의 청나라가 베이징을 점령한 뒤에도 베이징은 청의 통치 기간 동안 중국의 수도로 남게 되었다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">역사 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_history1.jpeg" alt="최초의 베이징" class="img-fluid">
+          <p>최초의 베이징</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">역사 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_history2.jpeg" alt="역사속 베이징" class="img-fluid">
+          <p>역사속 베이징<p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">역사 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_history3.jpeg" alt="오늘날의 베이징" class="img-fluid">
+          <p>오늘날의 베이징.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/자금성.webp" alt="자금성" class="img-fluid">
+            <p> 자금성은 명과 청 양대 왕조의 황궁. 현재 중국에서 가장 완전한 고건축물이다. 동서로 폭 760m, 남북 길이 960m, 면적 72만㎡으로 무려 9,999칸의 방이 있다. 목조 건축물로 황색의 유리 기와, 청백색의 좌대, 황금빛과 푸른빛의 찬란한 채색화로 장식되었다. 볼 것이 워낙 많은 자금성이니 시간 여유를 갖고 둘러보자.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/천안문.webp" alt="천안문" class="img-fluid">
+            <p>누구든 절대 그냥 지나칠 수 없는 곳. 천안문은 중국의 상징이라 할 수 있는 건축물로 자금성의 남쪽에 위치해있다. 천안문의 상징인 마오쩌둥 초상화가 현판과 함께 걸려있다. 천안문을 돋보이게 하는 건 바로 앞에 있는 넓은 광장. 수용 인원만 약 60만 명으로 세계에서도 손꼽히도록 넓다. 장엄한 건축물에서 뿜어져 나오는 웅장함과 아름다움이 보는 이를 압도한다. 중국 고대 성문 중 최고의 대표작이라 할 수 있다.
+</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/이화원1.jpg" alt="이화원" class="img-fluid">
+            <p>이화원은 황제의 여름 별궁으로 특히 서태후의 사랑을 받은 것으로 유명하다. 풍부한 물이 있는 ‘곤명호’를 중심으로 3,000개의 누각이 들어선 아름답고도 고즈넉한 정원이다. 세계 최대 규모를 자랑하며, 800년 가까운 역사가 있다. 현재는 그 가치를 인정받아 세계문화유산으로 등재되어 있다. 아름다운 자연을 바라보고, 화려한 누각 사이를 다니며 산책하는 재미와 더불어 호수에서 오리배도 탈 수 있으니, 머리를 식히기 위한 장소로 제격이다.
+</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">관광지 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction1.jpeg" alt="일본 관광지 1" class="img-fluid">
+          <p>일본 관광지 1에 대한 상세 내용을 여기에 추가하세요.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">관광지 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction2.jpeg" alt="일본 관광지 2" class="img-fluid">
+          <p>일본 관광지 2에 대한 상세 내용을 여기에 추가하세요.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">관광지 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction3.jpeg" alt="일본 관광지 3" class="img-fluid">
+          <p>일본 관광지 3에 대한 상세 내용을 여기에 추가하세요.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 봄 (3월~5월)과 가을 (9월~11월).</li>
+        <li>언어: 중국어. 영어가 통할 거라는 생각은 접어두자
+        <li>통화: 런민비의 기본 단위는 위안 (元).</li>
+        <li>어플
+		-파파고 : 의사소통을 위해 다운로드받자. 필기 인식도 가능해 메뉴판을 읽을 때도 유용하다.
+		
+        -디디추싱 (滴滴出行) : 카카오T처럼 택시를 호출할 수 있는 어플이다. 대략적인 금액도 확인할 수 있어 편리하다. 언어를 영어로 설정할 수도 있다.
+		
+        -고덕지도 (高德地图) : 중국의 지도 어플. 중국어로 되어 있어 당황스럽지만, 유명 명소는 영어로 검색이 가능하고 아이콘이 있어 내용 유추가 가능하다. 직접 사용해본 결과 중국에서는 구글맵보다 정확도가 높았다.
+</li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d8dldmrfQVw?si=ron5mnD2p3TUV_jR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 일본 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
